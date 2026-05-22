@@ -1,24 +1,16 @@
 ---
 name: youtube-thumbnail-design
 description: "YouTube thumbnail design with specific dimensions, contrast rules, and mobile preview optimization. Covers safe zones, text placement, face expression psychology, and A/B testing. Use for: YouTube thumbnails, video cover images, click-through optimization. Triggers: youtube thumbnail, thumbnail design, video thumbnail, click through rate, ctr optimization, youtube cover, video cover image, thumbnail maker, thumbnail tips, youtube design, video preview image"
-allowed-tools: Bash(belt *)
+allowed-tools: thinking, image generation, prompt text
 ---
-
-> **Install the belt CLI skill:** `npx skills add belt-sh/cli`
-
 # YouTube Thumbnail Design
 
-Create high-CTR YouTube thumbnails with AI image generation via [inference.sh](https://inference.sh) CLI.
+Create high-CTR YouTube thumbnails with AI image generation via prompting text, chatgpt image or nano banana
 
 ## Quick Start
-
-> Requires inference.sh CLI (`belt`). [Install instructions](https://raw.githubusercontent.com/inference-sh/skills/refs/heads/main/cli-install.md)
-
 ```bash
-belt login
-
-# Generate a thumbnail
-belt app run falai/flux-dev-lora --input '{
+# Generate a thumbnail example:
+--input '{
   "prompt": "YouTube thumbnail style, close-up of a person with surprised excited expression looking at a glowing laptop screen, vibrant blue and orange color scheme, dramatic studio lighting, shallow depth of field, high contrast, cinematic",
   "width": 1280,
   "height": 720
